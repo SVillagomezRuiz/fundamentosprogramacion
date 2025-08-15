@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A,B,C,D,E,F,G,H,J;
+    cout<<"ingresa la nota del primer parcial: ";
+    cin>>A;
+    cout<<"ingresa la nota del segundo parcial: ";
+    cin>>B;
+    cout<<"ingresa la nota del tercer parcial: ";
+    cin>>C;
+    D=A+B+C/3*0.4;
+    cout<<"la nota ponderada de parcial es: "<<D<<endl;
+    cout<<"ingrese la nota del examen final: ";
+    cin>>E;
+    F=E*2/5;
+    cout<<"la nota ponderada del examen final es: "<<F<<endl;
+    cout<<"ingrese la nota del proyecto final: ";
+    cin>>G;
+    H=G*2/5;
+    cout<<"la nota ponderada del proyecto final es: "<<H<<endl;
+    J=D+F+H;
+    cout<<"la nota final del semestre es: "<<J;
+    return 0;
+}
