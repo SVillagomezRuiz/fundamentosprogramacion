@@ -1,0 +1,48 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+
+{
+ float A, B, T, L, C, R, Q, H;
+  const float P = 3.1416;
+do {
+ cout<<"Menu"<<endl;
+ cout<<"1. area del triangulo"<<endl;
+ cout<<"2. area del cuadrado"<<endl;
+ cout<<"3. area de la circunferencia"<<endl;
+ cout<<"0. salir"<<endl;
+ cin>>A;
+    switch(A) {
+     case 1:
+        cout<<"ingrese la base: ";
+        cin>>B;
+        cout<<"ingresa la altura: ";
+        cin>>H;
+        T = (B*H)/2;
+        cout<<"el area del triangulo es: "<<T<<endl;
+        break;
+    case 2:
+        cout<<"ingresa un lado del cuadrado: ";
+        cin>>L;
+        C = L*L;
+        cout<<"el area del cuadrado es: "<<C<<endl;
+        break
+    case 3:
+        cout<<"ingresa el radio de la circunferencia: ";
+        cin>>R;
+        C=P*pow(R, 2);
+        cout<<"el area de la circuferencia es: " <<C<< endl;
+        break;
+    case 0:
+        cout<<"error"<<endl;
+        break;
+    default:
+    cout<<"ERROR"<<endl;
+    }
+    } while (A!=0)
+    return 0;
+    
+        
+ }
