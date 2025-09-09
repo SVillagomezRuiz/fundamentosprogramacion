@@ -5,7 +5,8 @@ using namespace std;
 int main()
 
 {
- float A, B, T, L, C, R, Q, H;
+ float B, T, L, C, R, Q, H;
+ int A;
   const float P = 3.1416;
 do {
  cout<<"Menu"<<endl;
@@ -14,7 +15,7 @@ do {
  cout<<"3. area de la circunferencia"<<endl;
  cout<<"0. salir"<<endl;
  cin>>A;
-    switch(A) {
+    switch (A) {
      case 1:
         cout<<"ingrese la base: ";
         cin>>B;
@@ -28,7 +29,7 @@ do {
         cin>>L;
         C = L*L;
         cout<<"el area del cuadrado es: "<<C<<endl;
-        break
+        break;
     case 3:
         cout<<"ingresa el radio de la circunferencia: ";
         cin>>R;
@@ -41,8 +42,6 @@ do {
     default:
     cout<<"ERROR"<<endl;
     }
-    } while (A!=0)
+    } while (A!=0);
     return 0;
-    
-        
- }
+}
