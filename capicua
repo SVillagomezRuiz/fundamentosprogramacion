@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+bool esCapicua(int numero) {
+    int original = numero;
+    int invertido = 0;
+
+    while (numero > 0) {
+        int digito = numero % 10;           
+        invertido = invertido * 10 + digito; 
+        numero = numero / 10;
+    }
+
+    return original == invertido;
+}
+
+int main() {
+    int numero;
+
+    cout << "Ingresa un numero entero: ";
+    cin >> numero;
+
+    if (numero < 0) {
+        cout << "No se aceptan números negativos para verificar si son capicua";
+        return 0;
+    }
+
+    if (esCapicua(numero)) {
+        cout << numero << " es un numero capicua";
+    }
+    else {
+        cout << numero << " no es un numero capicua";
+    }
+
+    return 0;
+}
